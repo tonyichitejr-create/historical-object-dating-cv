@@ -1,0 +1,33 @@
+image_size: 224
+
+batch_size: 32
+
+epochs: 50
+
+learning_rate: 0.001
+
+num_classes: 4
+
+dataset:
+
+  train: data/train
+
+  validation: data/validation
+
+  test: data/test
+
+model:
+
+  dropout: 0.5
+
+  optimizer: adam
+
+augmentation:
+
+  rotation: 20
+
+  zoom: 0.2
+
+  horizontal_flip: true
+
+  brightness: [0.8,1.2]
